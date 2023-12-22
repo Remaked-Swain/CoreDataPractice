@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="22522" systemVersion="23B92" minimumToolsVersion="Automatic" sourceLanguage="Swift" usedWithSwiftData="YES" userDefinedModelVersionIdentifier="">
+    <entity name="Joke" representedClassName="JokeMO" syncable="YES" codeGenerationType="class">
+        <attribute name="category" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="content" attributeType="String"/>
+        <attribute name="id" attributeType="UUID" usesScalarValueType="NO"/>
+        <relationship name="userRelationship" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="User" inverseName="jokeRelationship" inverseEntity="User"/>
+    </entity>
+    <entity name="User" representedClassName="UserMO" syncable="YES" codeGenerationType="class">
+        <attribute name="id" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="name" attributeType="String"/>
+        <relationship name="jokeRelationship" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Joke" inverseName="userRelationship" inverseEntity="Joke"/>
+    </entity>
+</model>
