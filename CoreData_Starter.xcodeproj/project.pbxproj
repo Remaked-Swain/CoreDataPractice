@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0402A7962B3AA85A005AE613 /* ConsoleLogHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0402A7952B3AA85A005AE613 /* ConsoleLogHelper.swift */; };
 		047465B62B2D58A700937755 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047465B52B2D58A700937755 /* CoreDataManager.swift */; };
 		04EA025D2B29A45600B2D768 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 04EA025B2B29A45600B2D768 /* Model.xcdatamodeld */; };
 		B43048DD2B22DF93006BDCB4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B43048DC2B22DF93006BDCB4 /* AppDelegate.swift */; };
@@ -26,6 +27,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0402A7952B3AA85A005AE613 /* ConsoleLogHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsoleLogHelper.swift; sourceTree = "<group>"; };
 		047465B52B2D58A700937755 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
 		04EA025C2B29A45600B2D768 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		B43048D92B22DF93006BDCB4 /* CoreData_Starter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreData_Starter.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -57,6 +59,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0402A7942B3AA84E005AE613 /* ConsoleLogHelper */ = {
+			isa = PBXGroup;
+			children = (
+				0402A7952B3AA85A005AE613 /* ConsoleLogHelper.swift */,
+			);
+			path = ConsoleLogHelper;
+			sourceTree = "<group>";
+		};
 		04EA025A2B29A45600B2D768 /* CoreData */ = {
 			isa = PBXGroup;
 			children = (
@@ -87,6 +97,7 @@
 			children = (
 				B43048DC2B22DF93006BDCB4 /* AppDelegate.swift */,
 				B43048DE2B22DF93006BDCB4 /* SceneDelegate.swift */,
+				0402A7942B3AA84E005AE613 /* ConsoleLogHelper */,
 				04EA025A2B29A45600B2D768 /* CoreData */,
 				B43048F62B22F084006BDCB4 /* ViewControllers */,
 				B43048F72B22F08B006BDCB4 /* Models */,
@@ -220,6 +231,7 @@
 				B43048F32B22E971006BDCB4 /* JokeSaveViewController.swift in Sources */,
 				B43048F52B22F009006BDCB4 /* Category.swift in Sources */,
 				B431C29E2B27F9170057802E /* JokeTabBarController.swift in Sources */,
+				0402A7962B3AA85A005AE613 /* ConsoleLogHelper.swift in Sources */,
 				B4A806372B289A08009ED350 /* Protocols.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

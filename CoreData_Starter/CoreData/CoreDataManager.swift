@@ -35,6 +35,7 @@ final class CoreDataManager {
         let context = backgroundContext ?? context
         guard context.hasChanges else { return }
         do {
+            ConsoleLogger.default.log(context.registeredObjects)
             try context.save()
         } catch {
             print("Failed to save context: \(error)")
